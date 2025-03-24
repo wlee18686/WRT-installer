@@ -50,8 +50,8 @@ jobs:
       - name: "Publish"
         uses: softprops/action-gh-release@v2.2.1
         with:
-          tag_name: "Custom-Installer-x86_64-ISO"
+          tag_name: "openwrt-24.10.0-x86-64"
           body_path: "${{ github.workspace }}/supportFiles/custom/info.md"
           files: |
-            output/Custom-Installer-x86_64-ISO.iso
+            output/openwrt-24.10.0-x86-64.iso
           token: "${{ secrets.GITHUB_TOKEN }}"
