@@ -50,8 +50,8 @@ jobs:
       - name: "Publish"
         uses: softprops/action-gh-release@v2.2.1
         with:
-          tag_name: "squashfs-combined-efi-Mar24-ISO"
+          tag_name: "Custom-Installer-x86_64-ISO"
           body_path: "${{ github.workspace }}/supportFiles/custom/info.md"
           files: |
-            output/squashfs-combined-efi-Mar24.iso
+            output/Custom-Installer-x86_64-ISO.iso
           token: "${{ secrets.GITHUB_TOKEN }}"
